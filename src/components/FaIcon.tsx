@@ -7,15 +7,17 @@ interface Props {
   spin?: boolean
   size?: SizeProp
   className?: string
+  fixedWidth?: boolean
 }
 
-export const FaIcon = ({ icon, spin, size, className }: Props) => {
+export const FaIcon = ({ icon, spin, size, className, fixedWidth }: Props) => {
   return (
     <FontAwesomeIcon
       icon={['fal', icon]}
       spin={spin}
       size={size}
       className={className}
+      fixedWidth={fixedWidth}
     />
   )
 }

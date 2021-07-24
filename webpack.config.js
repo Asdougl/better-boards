@@ -11,6 +11,7 @@ module.exports = {
     rules: [
       {
         test: /\.(t|j)sx?$/,
+        exclude: /node_modules/,
         use: 'babel-loader',
       },
       {
@@ -46,5 +47,6 @@ module.exports = {
     stats: 'minimal',
     overlay: true,
     port: 8080,
+    open: true,
   },
 }
